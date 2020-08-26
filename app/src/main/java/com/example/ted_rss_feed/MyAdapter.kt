@@ -41,7 +41,7 @@ class ItemsViewHolder(itemView : View): RecyclerView.ViewHolder(itemView){
         Glide.with(itemView.context).load(imageurl).into(photo)
         title_text.text = title.substringAfter('|').drop(1)
         description_text.text = title.substringBefore('|').dropLast(1)
-        timing_text.text = timing.substringAfter(":")
+        timing_text.text = timing.substringAfter(":")//
     }
 
 }
